@@ -25,11 +25,10 @@ public class Ex07 {
     }
 
     public static int mdc(int a, int b){
-        while(b!=0){
-            int temp = a;
-            a = b;
-            b = temp%b;
+        if(b==0){
+            return a;
+        }else{
+            return mdc(b, a%b);
         }
-        return a;
     }
 }

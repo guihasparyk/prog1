@@ -17,15 +17,10 @@ public class Ex09 {
     }
 
     public static boolean isprime(int n){
-        double counter = 1;
         for(int i=2; i<n ;i++){
-            counter *= n%i;
+            if( n%i==0 ) return false;
         }
-        if( counter!=0 ){
-            return true;
-        }else{
-            return false;
-        }
+        return true;
     }
 
     public static int getIntRange(int min, int max){
