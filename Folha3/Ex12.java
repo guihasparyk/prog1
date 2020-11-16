@@ -11,7 +11,7 @@ public class Ex12 {
             System.out.print("Introduza Year: ");
             int year = KB.nextInt();
 
-            if( month<=0 && month>12 ){
+            if( month<=0 || month>12 || day<0 || day>7 ){
                 System.out.print("\nBad Inputs! Try again...");
                 continue;
             }
