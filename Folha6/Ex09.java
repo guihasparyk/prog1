@@ -24,15 +24,18 @@ public class Ex09 {
 
     public static int nextIntRange(int min, int max) {
         int n = KB.nextInt();
+
         if( n<min || n>max ){
             System.out.printf("Número fora do alcance, tente um número entre %d e %d: ", min, max);
             n = nextIntRange(min, max);
         }
+        
         return n;
     }
 
     public static int[] getAandB() {
         int sizes[] = new int[4]; // {Am,An,Bm,Bn}
+
         System.out.print("\n\nIntroduza as dimensões da matriz A (m*n): ");
         sizes[0] = nextIntRange(1, Integer.MAX_VALUE);
         sizes[1] = nextIntRange(1, Integer.MAX_VALUE);
