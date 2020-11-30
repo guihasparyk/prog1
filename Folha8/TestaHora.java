@@ -1,4 +1,4 @@
-/*
+/* just remove this line
 import java.util.Scanner;
 
 public class TestaHora {

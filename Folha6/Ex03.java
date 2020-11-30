@@ -5,6 +5,7 @@ public class Ex03 {
 
     public static void main(String[] args) {
         int seq[] = new int[50]; // sequencia
+        getSeq(seq);
         getAndExecOptionFunc(seq);   
     }
 
@@ -56,7 +57,7 @@ public class Ex03 {
 
     public static void getSeq(int[] seq){
         for(int i=0; i<seq.length ;i++){
-            System.out.printf("Introduza o %dº número: ", i);
+            System.out.printf("Introduza o %dº número: ", i+1);
             seq[i] = KB.nextInt();
             if( seq[i]==0 ) break;
         }
